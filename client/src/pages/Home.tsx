@@ -14,6 +14,12 @@ const Home = () => {
       {/* Full-width Hero Carousel */}
       <HeroBanner />
 
+      {/* Announcement Ticker */}
+      <div className="w-full bg-gradient-to-r from-purple-900 via-purple-700 to-purple-900 text-white py-2 px-2 overflow-x-auto no-scrollbar shadow-inner flex justify-center items-center">
+        <p className="text-[10px] sm:text-xs font-semibold tracking-wide sm:tracking-widest uppercase whitespace-nowrap">
+          ✨ Free Delivery on orders over ₹500! Code: <span className="font-black text-amber-300 ml-1">SMART500</span> ✨
+        </p>
+      </div>
       {/* Features Bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 relative z-10">
         <Features />

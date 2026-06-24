@@ -55,11 +55,6 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Announcement Bar */}
-      <div className="w-full bg-gradient-to-r from-[#2c1358] via-purple-800 to-[#2c1358] text-white py-2 text-center text-xs font-bold tracking-widest uppercase shadow-inner">
-        Free delivery on all orders above ₹500! Use code SMART500
-      </div>
-
       <nav className="bg-white/90 backdrop-blur-xl sticky top-0 z-50 border-b border-app-border shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 gap-4">
           {/* Logo */}

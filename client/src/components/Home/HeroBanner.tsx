@@ -112,7 +112,7 @@ const HeroBanner = () => {
 
 
   return (
-    <section className="relative w-full aspect-[4/3] sm:aspect-[21/9] lg:aspect-[3/1] min-h-[350px] max-h-[600px] overflow-hidden shadow-2xl bg-app-green">
+    <section className="relative w-full aspect-[4/3] sm:aspect-[21/9] lg:aspect-[3/1] min-h-[350px] max-h-[600px] overflow-hidden shadow-2xl bg-slate-900">
       {/* Slides */}
       <AnimatePresence>
         <motion.div
@@ -143,11 +143,6 @@ const HeroBanner = () => {
                 transition={{ delay: 0.2, duration: 0.5 }}
                 className="max-w-2xl"
               >
-                {/* Pulsing Badge */}
-                <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-app-orange/90 text-white text-xs font-semibold uppercase tracking-wider mb-5 animate-pulse-soft">
-                  <span className="size-2 rounded-full bg-white animate-ping" />
-                  Mega Sale Live
-                </span>
 
                 {/* Title */}
                 <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 drop-shadow-lg">
