@@ -14,9 +14,11 @@ const PopularProducts = () => {
 
   useEffect(() => {
     api
-      .get("/products?sort=rating")
+      .get("/products")
       .then(({ data }) => {
-        setProducts(data.products);
+        // Shuffle the products randomly
+        const shuffled = data.products.sort(() => 0.5 - Math.random());
+        setProducts(shuffled);
       })
       .catch((error: any) => {
         toast.error(error.response.data.message || error?.message);
